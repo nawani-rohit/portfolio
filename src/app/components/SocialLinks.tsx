@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 export const socialData = [
   { link: 'https://github.com/nawani-rohit', icon: <Github /> },
   { link: 'https://www.linkedin.com/in/rohitnawani/', icon: <Linkedin /> },
-  { link: 'https://www.linkedin.com/in/rohitnawani/', icon: <Mail /> }
+  { link: 'mailto:nawani.r@northeastern.edu', icon: <Mail /> }
 ]
 
 export const SocialLinks = () => {
