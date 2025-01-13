@@ -1,25 +1,25 @@
-'use client';
+'use client'
+
+import Link from 'next/link'
+import { TypeAnimation } from 'react-type-animation'
 
 import { MotionDiv, MotionH1, MotionP } from '../lib/motion'
-import { EmailBtn } from './EmailBtn'
-import { TypeAnimation } from 'react-type-animation'
-import Link from 'next/link';
-import { useRouter } from 'next/navigation'
-
-
 
 export const Hero = () => {
-  const router = useRouter()
+  // const router = useRouter()
 
   const downloadResume = () => {
-    const resumeUrl = 'https://raw.githubusercontent.com/nawani-rohit/portfolio/main/resume/Rohit_Nawani%20-%20Resume.pdf'
-    const pdfViewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(resumeUrl)}`
+    const resumeUrl =
+      'https://raw.githubusercontent.com/nawani-rohit/portfolio/main/resume/Rohit_Nawani%20-%20Resume.pdf'
+    const pdfViewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
+      resumeUrl
+    )}`
     window.open(pdfViewerUrl, '_blank', 'noopener,noreferrer')
   }
 
-  const scrollToContact = () => {
-    router.push('/#contact')
-  }
+  // const scrollToContact = () => {
+  //   router.push('/#contact')
+  // }
 
   return (
     <section id="home">
@@ -74,14 +74,12 @@ export const Hero = () => {
           >
             <button
               onClick={downloadResume}
-              className="bg-target text-white px-4 py-2 rounded hover:bg-opacity-90 transition-colors"
+              className="rounded bg-target px-4 py-2 text-white transition-colors hover:bg-opacity-90"
             >
               Download Resume
             </button>
             <Link href="/#contact" passHref>
-              <button
-                className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition-colors"
-              >
+              <button className="rounded bg-gray-200 px-4 py-2 text-gray-800 transition-colors hover:bg-gray-300">
                 Contact Me
               </button>
             </Link>

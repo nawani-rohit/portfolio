@@ -14,55 +14,67 @@ type TimelineEntry = {
 const timelineData: TimelineEntry[] = [
   {
     type: 'experience',
-    title: "IpserLab",
-    subtitle: "Software Engineer",
-    duration: "May 2023 - Dec 2023",
-    location: "Boston, MA",
+    title: 'IpserLab',
+    subtitle: 'Software Engineer',
+    duration: 'May 2023 - Dec 2023',
+    location: 'Boston, MA',
     responsibilities: [
-      "Developed and maintained scalable web applications using React.js and Node.js",
-      "Implemented real-time event processing system reducing latency by 40%",
-      "Built RESTful APIs and integrated with third-party services",
-      "Collaborated with cross-functional teams to deliver high-quality software solutions"
+      'Developed and maintained scalable web applications using React.js and Node.js',
+      'Implemented real-time event processing system reducing latency by 40%',
+      'Built RESTful APIs and integrated with third-party services',
+      'Collaborated with cross-functional teams to deliver high-quality software solutions'
     ]
   },
   {
     type: 'education',
-    title: "Northeastern University",
-    subtitle: "Master of Science in Computer Software Engineering",
-    duration: "2022 - 2024",
-    location: "Boston, MA",
-    description: "Relevant Coursework: Web Development, Cloud Computing, Database Management, Software Engineering, Machine Learning"
+    title: 'Northeastern University',
+    subtitle: 'Master of Science in Computer Software Engineering',
+    duration: '2022 - 2024',
+    location: 'Boston, MA',
+    description:
+      'Relevant Coursework: Web Development, Cloud Computing, Database Management, Software Engineering, Machine Learning'
   },
   {
     type: 'experience',
-    title: "Capgemini",
-    subtitle: "Software Engineer",
-    duration: "July 2020 - July 2022",
-    location: "Mumbai, India",
+    title: 'Capgemini',
+    subtitle: 'Software Engineer',
+    duration: 'July 2020 - July 2022',
+    location: 'Mumbai, India',
     responsibilities: [
-      "Led development of enterprise-scale applications using Java and Spring Boot",
-      "Optimized database queries resulting in 30% performance improvement",
-      "Implemented microservices architecture for improved scalability",
-      "Mentored junior developers and conducted code reviews"
+      'Led development of enterprise-scale applications using Java and Spring Boot',
+      'Optimized database queries resulting in 30% performance improvement',
+      'Implemented microservices architecture for improved scalability',
+      'Mentored junior developers and conducted code reviews'
     ]
   },
   {
     type: 'education',
-    title: "AKTU University",
-    subtitle: "Bachelor of Technology in Computer Science",
-    duration: "2016 - 2020",
-    location: "Lucknow, India",
-    description: "Relevant Coursework: Data Structures, Algorithms, Operating Systems, Computer Networks"
+    title: 'AKTU University',
+    subtitle: 'Bachelor of Technology in Computer Science',
+    duration: '2016 - 2020',
+    location: 'Lucknow, India',
+    description:
+      'Relevant Coursework: Data Structures, Algorithms, Operating Systems, Computer Networks'
   }
 ]
 
-const TimelineCard = ({ entry, index }: { entry: TimelineEntry; index: number }) => {
+const TimelineCard = ({
+  entry,
+  index
+}: {
+  entry: TimelineEntry
+  index: number
+}) => {
   const isLeft = index % 2 === 0
-  
+
   return (
     <div className="relative grid grid-cols-[1fr_auto_1fr] gap-4 md:grid-cols-[1fr_auto] md:gap-6">
       {/* Content - Left Side */}
-      <div className={`${!isLeft && 'md:hidden'} ${isLeft ? 'text-right' : 'col-start-3'}`}>
+      <div
+        className={`${!isLeft && 'md:hidden'} ${
+          isLeft ? 'text-right' : 'col-start-3'
+        }`}
+      >
         {isLeft && (
           <MotionDiv
             initial={{ opacity: 0, x: -50 }}
@@ -83,7 +95,11 @@ const TimelineCard = ({ entry, index }: { entry: TimelineEntry; index: number })
       </div>
 
       {/* Content - Right Side */}
-      <div className={`${isLeft && 'md:hidden'} ${!isLeft ? 'text-left' : 'col-start-3'}`}>
+      <div
+        className={`${isLeft && 'md:hidden'} ${
+          !isLeft ? 'text-left' : 'col-start-3'
+        }`}
+      >
         {!isLeft && (
           <MotionDiv
             initial={{ opacity: 0, x: 50 }}
@@ -115,25 +131,47 @@ const TimelineCard = ({ entry, index }: { entry: TimelineEntry; index: number })
   )
 }
 
-const TimelineContent = ({ entry, align }: { entry: TimelineEntry; align: 'left' | 'right' }) => {
+const TimelineContent = ({
+  entry,
+  align
+}: {
+  entry: TimelineEntry
+  align: 'left' | 'right'
+}) => {
   return (
-    <div className={`flex flex-col ${align === 'right' ? 'items-end' : 'items-start'}`}>
+    <div
+      className={`flex flex-col ${
+        align === 'right' ? 'items-end' : 'items-start'
+      }`}
+    >
       <span className="inline-block rounded bg-target/10 px-2 py-1 text-sm text-target">
         {entry.type.toUpperCase()}
       </span>
       <h3 className="mt-2 text-2xl font-bold text-target">{entry.title}</h3>
       <p className="text-xl font-semibold">{entry.subtitle}</p>
-      <div className={`mt-1 flex flex-col ${align === 'right' ? 'items-end' : 'items-start'}`}>
+      <div
+        className={`mt-1 flex flex-col ${
+          align === 'right' ? 'items-end' : 'items-start'
+        }`}
+      >
         <p className="text-lg text-target">{entry.duration}</p>
         <p className="text-lg">{entry.location}</p>
       </div>
       {entry.description && (
-        <p className={`mt-4 text-lg ${align === 'right' ? 'text-right' : 'text-left'}`}>
+        <p
+          className={`mt-4 text-lg ${
+            align === 'right' ? 'text-right' : 'text-left'
+          }`}
+        >
           {entry.description}
         </p>
       )}
       {entry.responsibilities && (
-        <ul className={`mt-4 list-disc ${align === 'right' ? 'mr-4 text-right' : 'ml-4 text-left'}`}>
+        <ul
+          className={`mt-4 list-disc ${
+            align === 'right' ? 'mr-4 text-right' : 'ml-4 text-left'
+          }`}
+        >
           {entry.responsibilities.map((responsibility, idx) => (
             <li key={idx} className="mt-2 text-lg">
               {responsibility}

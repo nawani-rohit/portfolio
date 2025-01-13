@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+
 import { navigationLinks } from '@/app/utils/data'
 
 export const NavBar = () => {

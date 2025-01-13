@@ -1,15 +1,13 @@
 import { StaticImageData } from 'next/image'
 
-import ragImage from '@/app/components/assests/rag.png'
-import numovesImage from '@/app/components/assests/NuMoves.png'
-import serverlessImage from '@/app/components/assests/event.png'
-import movieFinderImage from '@/app/components/assests/Movie-Finder.png'
-import dutchAuctionImage from '@/app/components/assests/dutch-auction.png'
-import herImage from '@/app/components/assests/HER.png'
-//import portfolioImage from '@/app/components/assests/Portfolio.png'
 import covidTrackerImage from '@/app/components/assests/covid19.png'
-
-
+import dutchAuctionImage from '@/app/components/assests/dutch-auction.png'
+import serverlessImage from '@/app/components/assests/event.png'
+import herImage from '@/app/components/assests/HER.png'
+import movieFinderImage from '@/app/components/assests/Movie-Finder.png'
+import numovesImage from '@/app/components/assests/NuMoves.png'
+import ragImage from '@/app/components/assests/rag.png'
+//import portfolioImage from '@/app/components/assests/Portfolio.png'
 
 export const navigationLinks = [
   { label: 'Home', path: '#home' },
@@ -37,7 +35,7 @@ export const projectsData: projectType[] = [
     url: 'https://github.com/nawani-rohit/RAG-Personal-Finance-Management',
     image: ragImage,
     description:
-      'A sophisticated financial document analysis system that leverages Retrieval-Augmented Generation (RAG) to provide intelligent insights from financial documents. Built with FastAPI and React, this full-stack application processes and analyzes financial documents using OpenAI\'s language models.',
+      "A sophisticated financial document analysis system that leverages Retrieval-Augmented Generation (RAG) to provide intelligent insights from financial documents. Built with FastAPI and React, this full-stack application processes and analyzes financial documents using OpenAI's language models.",
     Skills: ['React', 'RAG', 'OpenAI API', 'FASTAPI', 'Python']
   },
   {
@@ -102,7 +100,7 @@ export const projectsData: projectType[] = [
     description:
       'A responsive web application built with React that provides real-time global COVID-19 statistics and visualization. This project demonstrates the implementation of interactive data visualization and real-time API integration.',
     Skills: ['React', 'Mapbox GL', 'Netlify']
-  },
+  }
 ]
 
 export const skillsData = [
@@ -152,24 +150,24 @@ export const skillsData = [
     name: 'C++'
   },
   {
-    img: 'express/express-original.svg',  // for ExpressJS
+    img: 'express/express-original.svg', // for ExpressJS
     name: 'Express'
   },
   {
-      img: 'postman/postman-original.svg',
-      name: 'Postman'
+    img: 'postman/postman-original.svg',
+    name: 'Postman'
   },
   {
-      img: 'mysql/mysql-original.svg',
-      name: 'MySQL'
+    img: 'mysql/mysql-original.svg',
+    name: 'MySQL'
   },
   {
-      img: 'redis/redis-original.svg',
-      name: 'Redis'
+    img: 'redis/redis-original.svg',
+    name: 'Redis'
   },
   {
-      img: 'firebase/firebase-plain.svg',
-      name: 'Firebase'
+    img: 'firebase/firebase-plain.svg',
+    name: 'Firebase'
   },
   {
     img: 'docker/docker-original.svg',
@@ -180,11 +178,12 @@ export const skillsData = [
   //   name: 'Spring Boot'
   // },
   {
-      img: 'apache/apache-original.svg',  // for Apache Kafka
-      name: 'Apache Kafka'
-  },
+    img: 'apache/apache-original.svg', // for Apache Kafka
+    name: 'Apache Kafka'
+  }
 ]
 
 export const headerData = {
-  resumePdf: 'https://raw.githubusercontent.com/nawani-rohit/portfolio/main/resume/Rohit_Nawani%20-%20Resume.pdf'
+  resumePdf:
+    'https://raw.githubusercontent.com/nawani-rohit/portfolio/main/resume/Rohit_Nawani%20-%20Resume.pdf'
 }

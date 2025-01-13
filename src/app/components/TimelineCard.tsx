@@ -1,5 +1,6 @@
-import { MotionDiv } from '../lib/motion'
 import { ReactNode } from 'react'
+
+import { MotionDiv } from '../lib/motion'
 
 type TimelineCardProps = {
   isLeft: boolean
@@ -10,7 +11,11 @@ export const TimelineCard = ({ isLeft, children }: TimelineCardProps) => {
   return (
     <div className="relative grid grid-cols-[1fr_auto_1fr] gap-8 md:grid-cols-[1fr_auto] md:gap-6">
       {/* Left Side Content */}
-      <div className={`${!isLeft && 'md:hidden'} ${isLeft ? 'text-right' : 'col-start-3'}`}>
+      <div
+        className={`${!isLeft && 'md:hidden'} ${
+          isLeft ? 'text-right' : 'col-start-3'
+        }`}
+      >
         {isLeft && (
           <MotionDiv
             initial={{ opacity: 0, x: -50 }}
@@ -26,12 +31,16 @@ export const TimelineCard = ({ isLeft, children }: TimelineCardProps) => {
 
       {/* Timeline Line & Dot */}
       <div className="relative flex justify-center">
-        <div className="absolute top-0 bottom-[-100px] w-[2px] bg-blue-500"></div>
+        <div className="absolute bottom-[-100px] top-0 w-[2px] bg-blue-500"></div>
         <div className="relative mt-6 h-4 w-4 rounded-full bg-blue-500 ring-4 ring-blue-500/20"></div>
       </div>
 
       {/* Right Side Content */}
-      <div className={`${isLeft && 'md:hidden'} ${!isLeft ? 'text-left' : 'col-start-3'}`}>
+      <div
+        className={`${isLeft && 'md:hidden'} ${
+          !isLeft ? 'text-left' : 'col-start-3'
+        }`}
+      >
         {!isLeft && (
           <MotionDiv
             initial={{ opacity: 0, x: 50 }}

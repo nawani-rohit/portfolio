@@ -8,7 +8,7 @@ const saira = Saira({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio | Rohit Nawani',
-  description: 'Portfolio of Rohit Nawani',
+  description: 'Portfolio of Rohit Nawani'
 }
 export default function RootLayout({
   children

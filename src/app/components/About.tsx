@@ -13,16 +13,30 @@ export const About = () => {
           className="flex max-w-2xl flex-col gap-6 text-xl md:text-center sm:text-lg"
         >
           <p>
-            Hello, I&apos;m a recent Master&apos;s graduate in Computer Software Engineering from Northeastern University. I&apos;m passionate about building scalable web applications and specialize in full-stack development using modern technologies like MERN Stack and Python. Through my academic journey and professional experiences, I&apos;ve developed expertise in crafting efficient solutions that combine technical excellence with practical business value.
+            Hello, I&apos;m a recent Master&apos;s graduate in Computer Software
+            Engineering from Northeastern University. I&apos;m passionate about
+            building scalable web applications and specialize in full-stack
+            development using modern technologies like MERN Stack and Python.
+            Through my academic journey and professional experiences, I&apos;ve
+            developed expertise in crafting efficient solutions that combine
+            technical excellence with practical business value.
           </p>
           <p>
-            My technical journey spans across developing high-performance analytics dashboards, implementing real-time event processing systems, and exploring AI/ML integrations. During my time at IpserLab and Capgemini, I&apos;ve worked on diverse projects ranging from quiz platforms to enterprise-scale applications, gaining valuable experience in cloud technologies and distributed systems.
+            My technical journey spans across developing high-performance
+            analytics dashboards, implementing real-time event processing
+            systems, and exploring AI/ML integrations. During my time at
+            IpserLab and Capgemini, I&apos;ve worked on diverse projects ranging
+            from quiz platforms to enterprise-scale applications, gaining
+            valuable experience in cloud technologies and distributed systems.
           </p>
           <p>
-            I&apos;m constantly exploring new technologies and best practices in software development. My focus areas include cloud-native applications, AI/ML integration, and building scalable distributed systems.
+            I&apos;m constantly exploring new technologies and best practices in
+            software development. My focus areas include cloud-native
+            applications, AI/ML integration, and building scalable distributed
+            systems.
           </p>
         </MotionDiv>
-        
+
         <MotionDiv
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}

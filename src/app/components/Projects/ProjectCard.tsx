@@ -1,7 +1,9 @@
 import Image from 'next/image'
+
 import { MotionDiv, MotionNav } from '../../lib/motion'
 import { projectType } from '../../utils/data'
-import { Code2, ExternalLink } from 'lucide-react'
+
+import { Code2 } from 'lucide-react'
 
 type Props = {
   projectData: projectType
@@ -20,10 +22,10 @@ const item = {
 
 export const ProjectCard = ({ projectData }: Props) => {
   return (
-    <MotionDiv className="relative flex flex-col gap-6 lg:gap-4 md:gap-3 sm:w-full">
+    <MotionDiv className="lg:gap-4 relative flex flex-col gap-6 md:gap-3 sm:w-full">
       <div className="relative flex-col gap-4">
         {/* Fixed aspect ratio container */}
-        <div className="relative h-[280px] w-full lg:h-[240px] md:h-[220px] sm:h-[200px]">
+        <div className="lg:h-[240px] relative h-[280px] w-full md:h-[220px] sm:h-[200px]">
           <Image
             src={projectData.image}
             alt={`${projectData.name} image`}
@@ -32,7 +34,7 @@ export const ProjectCard = ({ projectData }: Props) => {
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             priority
           />
-          
+
           <MotionDiv
             initial="initial"
             animate="initial"
@@ -61,13 +63,17 @@ export const ProjectCard = ({ projectData }: Props) => {
       </div>
 
       <div className="flex flex-col gap-4 md:gap-3 sm:gap-2">
-        <h3 className="text-2xl font-bold lg:text-xl md:text-lg">{projectData.name}</h3>
-        <p className="text-lg lg:text-base md:text-sm">{projectData.description}</p>
+        <h3 className="lg:text-xl text-2xl font-bold md:text-lg">
+          {projectData.name}
+        </h3>
+        <p className="lg:text-base text-lg md:text-sm">
+          {projectData.description}
+        </p>
         <div className="flex flex-wrap gap-3 md:gap-2">
           {projectData.Skills.map((tag, index) => (
             <span
-              className="rounded-3xl bg-target/20 px-3 py-1 text-sm font-bold text-target 
-                lg:px-2.5 md:px-2 md:text-xs"
+              className="lg:px-2.5 rounded-3xl bg-target/20 px-3 py-1 text-sm font-bold 
+                text-target md:px-2 md:text-xs"
               key={index}
             >
               {tag}
