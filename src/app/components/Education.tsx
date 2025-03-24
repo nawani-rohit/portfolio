@@ -5,14 +5,14 @@ const educationData = [
   {
     school: 'Northeastern University',
     degree: 'Master of Science in Computer Software Engineering',
-    duration: '2022 - 2024',
+    duration: 'September 2022 - December 2024',
     location: 'Boston, MA',
     side: 'left'
   },
   {
     school: 'Mumbai University',
     degree: 'Bachelor of Engineering in Computer Engineering',
-    duration: '2016 - 2020',
+    duration: 'August 2016 - May 2020',
     location: 'Mumbai, India',
     side: 'right'
   }

@@ -19,7 +19,7 @@ const experienceData = [
   {
     company: 'Tripund Solutions',
     position: 'Software Engineer',
-    duration: 'Jul 2020 - Dec 2020',
+    duration: 'Jun 2020 - Dec 2020',
     location: 'Mumbai, India',
     side: 'left'
   }

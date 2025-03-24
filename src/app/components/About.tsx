@@ -14,26 +14,19 @@ export const About = () => {
         >
           <p>
             Hello, I&apos;m a recent Master&apos;s graduate in Computer Software
-            Engineering from Northeastern University. I&apos;m passionate about
-            building scalable web applications and specialize in full-stack
-            development using modern technologies like MERN Stack and Python.
-            Through my academic journey and professional experiences, I&apos;ve
-            developed expertise in crafting efficient solutions that combine
-            technical excellence with practical business value.
+            Engineering from Northeastern University with a strong foundation in full-stack development. 
+            I specialize in building responsive web applications using React, Java, and cloud technologies.
           </p>
           <p>
-            My technical journey spans across developing high-performance
-            analytics dashboards, implementing real-time event processing
-            systems, and exploring AI/ML integrations. During my time at
-            IpserLab and Capgemini, I&apos;ve worked on diverse projects ranging
-            from quiz platforms to enterprise-scale applications, gaining
-            valuable experience in cloud technologies and distributed systems.
+            During my professional journey, I&apos;ve worked across analytics at Tripund Solutions, 
+            enterprise systems at Capgemini, and enterprise assesment at Ipserlab. 
+            I&apos;ve built real-time dashboards for warehouse operations, optimized database performance, 
+            created reusable component libraries, and configured monitoring systems that significantly improved application responsiveness and development efficiency.
           </p>
           <p>
-            I&apos;m constantly exploring new technologies and best practices in
-            software development. My focus areas include cloud-native
-            applications, AI/ML integration, and building scalable distributed
-            systems.
+            My technical toolkit includes React, Redux, Angular, Spring Boot, Node.js, PostgreSQL, and MongoDB. 
+            I focus on performance optimization, maintainable architecture, and effective testing. 
+            I balance technical excellence with business impact, prioritizing end-user experience while thriving in collaborative environments where I can contribute to meaningful solutions.
           </p>
         </MotionDiv>
 
