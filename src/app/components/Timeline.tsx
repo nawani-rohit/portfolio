@@ -14,7 +14,7 @@ type TimelineEntry = {
 const timelineData: TimelineEntry[] = [
   {
     type: 'experience',
-    title: 'IpserLab',
+    title: 'IpserLab, LLC',
     subtitle: 'Software Engineer',
     duration: 'May 2023 - Dec 2023',
     location: 'Boston, MA',
